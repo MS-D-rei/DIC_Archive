@@ -1,0 +1,61 @@
+html {
+    font-size: 62.5%;
+    /* default size is 16px. 16 * 0.625 = 10px */
+    /* it is not better to use px on font-size for flexible use */
+    /* rem = html's font-size. 1 'rem = 10 px in this case */
+    /* em = parent's font-size. 1 em = 10 px if html is the parent */
+}
+
+body {
+    width: 980px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #F5B4B3;
+    height: 50px;
+    font-size: 1.5rem;
+}
+
+.logo_image {
+    width: 110px;
+    margin: 0;
+    float: left;
+}
+
+.top_menu {
+    float: right;
+}
+
+.top_menu li {
+    float: left;
+    width: auto;
+}
+
+.top_menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+}
+
+.top_menu li a:hover {
+    text-decoration: underline;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+ul {
+    /* ul tag has blank space by default, remove it */
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    /* li tag has a blank circle, remove it */
+    list-style: none;
+}
