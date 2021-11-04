@@ -1,0 +1,49 @@
+.sample {
+    height: 100px;
+    background-color: skyblue;
+    font-weight: bold;
+    position: relative;
+}
+
+.dummy {
+    height: 100px;
+    background-color: turquoise;
+}
+
+.sample_1 {
+    background-color: black;
+    color: red;
+    position: static;
+    /* static can't change position
+    top: 10px;
+    left: 10px;
+    static is for overlapping or invalidating a third party CSS file.
+    */
+}
+
+.sample_2 {
+    background-color: black;
+    color: red;
+    position: relative;
+    /* relative moves position from static position */
+    top: 10px;
+    left: 10px;
+}
+
+.sample_3 {
+    background-color: black;
+    color: red;
+    position: absolute;
+    /* when static is set, the upper left of the FIRST parent element becomes the ref position */
+    /* when others are set, the upper left of the parent element becomes the ref */
+    top: 10px;
+    left: 10px;
+}
+
+.sample_4 {
+    background-color: black;
+    color: red;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
