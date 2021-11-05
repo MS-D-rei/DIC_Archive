@@ -4,11 +4,18 @@ html {
     /* it is not better to use px on font-size for flexible use */
     /* rem = html's font-size. 1 'rem = 10 px in this case */
     /* em = parent's font-size. 1 em = 10 px if html is the parent */
+    height: 100%;
 }
 
 body {
+    height: 100%;
+}
+
+.container {
     width: 980px;
     margin: 0 auto;
+    position: relative;
+    min-height: 100%;
 }
 
 header {
@@ -66,6 +73,7 @@ li {
 
 .wrapper {
     margin-top: 10px;
+    padding-bottom: 110px;
 }
 
 .side_menu {
@@ -103,4 +111,49 @@ li {
 
 .banner img {
     width: 100%;
+}
+
+.content {
+    width: 660px;
+    margin-left: 20px;
+    float: left;
+    font-size: 1.5rem;
+}
+
+.news {
+    height: 200px;
+    background-color: #FCE8E7;
+    padding: 20px;
+    overflow: scroll;
+    line-height: 2;
+}
+
+.banner_content {
+    display: table;
+    margin-top: 10px;
+}
+
+.banner_content p {
+    display: table-cell;
+}
+
+.banner_content img {
+    width: 100%;
+}
+
+.footer {
+    background-color: #4D4D4D;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: table;
+}
+
+.footer p {
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
 }
